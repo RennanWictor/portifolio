@@ -1,0 +1,117 @@
+#bloco{
+
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 80%;
+    height: 450px;
+    margin-left: 10%;
+    margin-top: 1.5%;
+}
+
+body{
+    background-image: url("../img/index3.jpg");
+    background-size: 100% 100%;
+}
+
+#title{
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+}
+
+#img1{
+    margin-left: 26%;
+}
+
+#Video{
+    text-align: center;
+    margin-top: 2%;
+}
+
+#botoes{
+    width: 80%;
+    height: 45px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    margin-left: 10%;
+    float: top;
+}
+
+.opção{
+    height: 35px;
+    width: 25%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 15px;
+    float: left;
+    user-select: none;
+    cursor: pointer;
+    font-style: unset;
+    color: rgb(185, 185, 185);
+}
+
+.opção:hover{
+    background-color: rgb(97, 95, 95);
+    transition: background-color 0.5s;
+}
+
+#texto1{
+    font-size: larger;
+    margin: 2%;
+    padding-top: 1%;
+}
+
+.imagem{
+    height: 24%;
+    width: 24%;
+    float: left;
+    margin-left: 0.8%;
+}
+
+#img2{
+    background-size: 100%;
+    float: left;
+    height: 700px;
+    width: 40%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+
+}
+
+#bloco2{
+    background-color: rgb(255, 255, 255, 0.65);
+    width: 80%;
+    height: 1070px;
+    margin-left: 10%;
+    margin-top: 1.5%;
+}
+
+#txt{
+    margin: 2%;
+}
+
+#bloco3{
+    background-color: rgb(255, 255, 255, 0.65);
+    width: 80%;
+    height: 1020px;
+    margin-left: 10%;
+    margin-top: 1.5%;
+}
+
+#img3{
+    background-size: 100%;
+    float: left;
+    height: 700px;
+    width: 50%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+#bloco4{
+    background-color: rgb(255, 255, 255, 0.65);
+    width: 80%;
+    height: 1135px;
+    margin-left: 10%;
+    margin-top: 1.5%;
+}
