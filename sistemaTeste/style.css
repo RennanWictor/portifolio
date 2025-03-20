@@ -1,0 +1,1126 @@
+.entrada #caixaMatricula::-webkit-outer-spin-button,
+.entrada #caixaMatricula::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.entrada #mat[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.patrimonio #caixaPatrimonio::-webkit-outer-spin-button,
+.patrimonio #caixaPatrimonio::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.patrimonio #pat[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('arquivos/gotham/Gotham-Book.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothamBold';
+    src: url('arquivos/gotham/GOTHAM-BOLD.TTF') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+
+    font-family: 'GothamBook';
+
+}
+
+/* CABEÇALHOS */
+
+.container{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0%;
+    position: relative;
+    top: 0%;
+    width: 100%;
+    gap: 1%;
+    height: 12%;
+
+}
+
+#titulo{
+    font-family: 'GothamBold';
+    position: absolute;
+    top: 15px;
+    right:70px;
+    margin-top: 0;
+    padding-top: 0;
+    flex-grow: 0;
+    font-size: 42px;
+    right: 70px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.img{
+    width: auto;
+    margin-top: 15px;
+    left: 0px;
+    top: 0px;
+    margin-left: 60px;
+}
+
+/* -----------------------------------------------------------------*/
+
+#timer{
+    position: absolute;
+    right: 70px;
+    top: 117px;
+    border: 3px solid rgb(17, 62, 121);
+    border-radius: 0px 15px 15px 0px;
+    border-left: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+}
+
+.logout{
+    text-decoration: none;
+    display: flex;
+    top: 117px;
+    position: absolute;
+    right: 162px;
+    background-color: rgb(17, 62, 121);
+    color: #fff;
+    padding: 10px 15px;
+    padding-top:10px;
+    padding-top: 10px;
+    border: 3px solid rgb(17, 62, 121);
+    border-radius: 15px 0px 0px 15px;
+    border-right: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.logout:hover {
+    background-color: rgba(61, 103, 167);
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* INPUTS PARA ENTRADA DE MATRÍCULA OPERADORES, ALUNOS E PATRIMÔNIOS */
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.entrada p {
+    font-size: 185%;    
+    position: absolute;
+    top: 300px;
+    margin-bottom: 20px;
+    color: rgb(25, 39, 119);
+    text-align: center;
+}
+
+/* Contêiner para alinhar a caixa de texto e o botão */
+.inputs-container {
+    display: flex;
+    position: absolute;
+    top: 385px;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+#botaoEntrar {
+    position: absolute;
+    background-color: rgb(17, 62, 121);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    left: 58.5%;
+}
+
+#botaoEntrar:hover {
+    background-color: rgba(61, 103, 167);
+}
+
+
+#caixaMatricula {
+    position: absolute;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 20%;
+    right: 41.5%;
+}
+
+#caixaMatricula, #botaoEntrar {
+    margin: 0 5px;
+}
+
+/* -----------------------------------------------------------------*/
+
+.patrimonio{
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 12%;
+    margin-left: 2.5%;
+
+}
+
+.patrimonio p{
+    position: absolute;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(25, 39, 119);
+    text-align: left;
+    top: 280px;
+    left: 70px;
+
+}
+
+.inputs-container2 {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    width: 100%;
+}
+#botaoEntrar2 {
+    position: absolute;
+    background-color: rgb(17, 62, 121);
+    color: #fff;
+    border: none;
+    padding: 11px 15px;
+    padding-bottom: 10.5px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    left: 368px;
+    top: 372px;
+}
+
+#botaoEntrar2:hover {
+    background-color: rgba(61, 103, 167);
+}
+
+#botaoRenovar {
+    position: absolute;
+    background-color: rgb(17, 62, 121);
+    color: #fff;
+    border: none;
+    border-right: 1px solid #fff;
+    padding: 11px 15px;
+    padding-bottom: 10.5px;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    left: 580px;
+    top: 372px;
+}
+
+#botaoRenovar:hover {
+    background-color: rgba(61, 103, 167);
+}
+
+#botaoRenovar2 {
+    position: absolute;
+    background-color: rgb(17, 62, 121);
+    color: #fff;
+    border: none;
+    border-left: 1px solid #fff;
+    padding: 11px 15px;
+    padding-bottom: 10.5px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    left: 780px;
+    top: 372px;
+}
+
+#botaoRenovar2:hover {
+    background-color: rgba(61, 103, 167);
+}
+
+
+#caixaPatrimonio {
+    position: absolute;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px 0px 0px 10px;
+    width: 300px;
+    left: 70px;
+    top: 372px
+}
+
+#caixaPatrimonio, #botaoentrar2 {
+    margin: 0 5px;
+}
+
+/* -----------------------------------------------------------------*/
+
+.perfilOperador{
+    display: flex;
+    position: absolute;
+    right: 70px;
+    top: 197px;
+    border: 3px solid rgb(17, 62, 121);
+    border-bottom: 1px solid rgb(17, 62, 121);
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 250px;
+    height: 98px;
+    background-color: rgb(225, 225, 225);
+}
+
+#identidadeOperador{
+    margin-top: 5%;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(17, 62, 121);
+}
+
+#fotoOperador{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 97px;
+    height: 97px;
+    border-radius: 0px 17px 0px 0px;
+    border-left: 1px solid rgb(17, 62, 121);
+    bottom: 0px;
+}
+
+.aviso {
+    display: flex;
+    position: absolute;
+    top: 297px;
+    border: 3px solid rgb(17, 62, 121);
+    border-top: 1px solid rgb(17, 62, 121);
+    border-radius: 0px 0px 20px 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+    height: 100px;
+    right: 70px;
+}
+
+.aviso p{
+    display: flex;
+    position: absolute;
+    text-align: left;
+    top: 40px;
+    padding-top: 15px;
+}
+
+/* -----------------------------------------------------------------*/
+
+.perfilAluno{
+    position: absolute;
+    top: 160px;
+    left: 70px;
+}
+
+#idaluno{
+    color: rgb(17, 62, 121);
+    font-size: 25px;
+}
+
+/* -----------------------------------------------------------------*/
+
+#erro{
+    position: absolute;
+    bottom: 270px;
+    right: 43%;
+}
+
+#erro2{
+    position: absolute;
+    bottom: 210px;
+    right: 45%;
+}
+
+#erro3{
+    position: absolute;
+    bottom: 220px;
+    left: 100px;
+}
+
+/*----------------------------------------------------------------------*/
+
+.concluido {
+    display: flex;
+    position: absolute;
+    top: 222px;
+    left: 50px;
+    width: 1000px;
+}
+
+.concluido p{
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    left: 100px;
+    bottom: -7px;
+}
+
+#fotoConfere{
+    width: 95px;
+    height: 95px;
+}
+
+/*------------------------------------------------------------*/
+
+table {
+    position: absolute;
+    border-collapse: collapse;
+    width: 90.5%;
+    top: 450px;
+    right: 70px;
+    left: 70px;
+    border: none;
+    margin-bottom: 50px;
+}
+
+th, td {
+    border: 2px solid #fff;
+    padding: 5px 2px;
+}
+
+tr:nth-child(even) {
+    background-color: #fff; /* Cor de fundo para as linhas pares */
+}
+
+/* Define a cor para as linhas ímpares */
+tr:nth-child(odd) {
+    background-color: rgba(61, 103, 167, 0.281); /* Cor de fundo para as linhas ímpares */
+}
+
+th {
+    font-size: 20px;
+    background-color: rgb(17, 62, 121);
+    color: #fff;
+}
+
+td{
+    font-size: 17;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+
+                            PARA CELULAR
+
+-----------------------------------------------------------------------------------------------------------------*/
+
+/* Media Query */
+@media screen and (max-width: 680px){
+    
+    .container{
+        display: flex;
+        position: absolute;
+        left: -50px;
+    }
+
+    #titulo{
+        font-family: 'GothamBold';
+        position: absolute;
+        font-size: 22px;
+        text-align: center;
+        left: 85px;
+        top: 90px;
+        width: 250px;
+    }
+
+    .img{
+        position: absolute;
+        top: 0px;
+        width: 250px;
+        height: 40px;
+        left: 90px;
+        
+    }
+
+    /*-----------------------------------------------------------------------------------------*/
+
+    /* INPUTS PARA ENTRADA DE MATRÍCULA OPERADORES, ALUNOS E PATRIMÔNIOS */
+
+    .entrada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entrada p {
+        font-size: 22px;    
+        position: absolute;
+        top: 270px;
+        margin-bottom: 20px;
+        color: rgb(25, 39, 119);
+        text-align: center;
+    }
+
+    /* Contêiner para alinhar a caixa de texto e o botão */
+    .inputs-container {
+        display: flex;
+        position: absolute;
+        top: 360px;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+    #botaoEntrar {
+        position: absolute;
+        background-color: rgb(17, 62, 121);
+        color: #fff;
+        border: none;
+        padding: 8px;
+        padding-bottom: 9px;
+        border-radius: 0px 15px 15px 0px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 90px;
+        left: 299px;
+    }
+
+    #botaoEntrar:hover {
+        background-color: rgba(61, 103, 167);
+    }
+
+
+    #caixaMatricula {
+        position: absolute;
+        padding: 8px;
+        padding-bottom: 7px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 15px 0px 0px 15px;
+        width: 250px;
+        left: 50px;
+    }
+
+    #caixaMatricula, #botaoEntrar {
+        margin: 0 5px;
+    }
+
+    /*-------------------------------------------------------------------*/
+
+    #timer{
+        position: absolute;
+        left: 35px;
+        top: 190px;
+        border: 3px solid rgb(17, 62, 121);
+        border-radius: 0px 0px 15px 15px;
+        font-size: 20px;
+        width: 50px;
+        height: 20px;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+    
+    .logout{
+        text-decoration: none;
+        display: flex;
+        position: absolute;
+        top: 150px;
+        left: 35px;
+        background-color: rgb(17, 62, 121);
+        color: #fff;
+        border: 3px solid rgb(17, 62, 121);
+        border-radius: 15px 15px 0px 0px;
+        cursor: pointer;
+        font-size: 20px;
+        width: 40px;
+        text-align: center;
+        height: 20px;
+    }
+    
+    .logout:hover {
+        background-color: rgba(61, 103, 167);
+    }
+
+    /* -----------------------------------------------------------------*/
+
+    .perfilOperador{
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 140px;
+        border: 3px solid rgb(17, 62, 121);
+        border-radius: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 220px;
+        height: 98px;
+        background-color: rgb(225, 225, 225);
+    }
+    
+    #identidadeOperador{
+        margin-top: 10%;
+        text-align: left;
+        font-size: 16px;
+        color: rgb(17, 62, 121);
+    }
+    
+    #fotoOperador{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 97px;
+        height: 97px;
+        border-radius: 0px 17px 17px 0px;
+        border-left: 1px solid rgb(17, 62, 121);
+        bottom: 0px;
+    }
+    
+    .aviso {
+        display: none;
+    }
+    
+    .aviso p{
+        display: none;
+    }
+    
+    /* -----------------------------------------------------------------*/
+
+    .perfilAluno{
+        position: absolute;
+        top: 440px;
+        left: 35px;
+    }
+    
+    #idaluno{
+        color: rgb(17, 62, 121);
+        font-size: 18px;
+    }
+
+    /*---------------------------------------------------------------------*/
+
+    #erro{
+        position: absolute;
+        bottom: 270px;
+        right: 43%;
+    }
+
+    #erro2{
+        position: absolute;
+        bottom: 210px;
+        right: 155px;
+    }
+
+    #erro3{
+        position: absolute;
+        bottom: 287px;
+        left: 150px;
+    }
+
+    /*----------------------------------------------------------------------*/
+
+    table{
+        display: none;
+    }
+
+    /* -----------------------------------------------------------------------------*/
+
+    .patrimonio{
+
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 12%;
+        margin-left: 2.5%;
+    
+    }
+    
+    .patrimonio p{
+        font-size: 22px;    
+        position: absolute;
+        top: 280px;
+        margin-bottom: 20px;
+        color: rgb(25, 39, 119);
+        text-align: center;
+        left: 40px;
+        width: 390px;
+    }
+    
+    .inputs-container2 {
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+        width: 100%;
+    }
+    #botaoEntrar2 {
+        position: absolute;
+        background-color: rgb(17, 62, 121);
+        color: #fff;
+        border: none;
+        padding: 8px;
+        padding-bottom: 9px;
+        border-radius: 0px 15px 15px 0px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 90px;
+        left: 299px;
+    }
+    
+    #botaoEntrar2:hover {
+        background-color: rgba(61, 103, 167);
+    }
+
+    #botaoRenovar {
+        position: absolute;
+        background-color: rgb(17, 62, 121);
+        color: #fff;
+        border: none;
+        padding: 8px;
+        padding-bottom: 9px;
+        border-radius: 0px 15px 15px 0px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 90px;
+        left: 299px;
+    }
+
+    #botaoRenovar2 {
+        position: absolute;
+        background-color: rgb(17, 62, 121);
+        color: #fff;
+        border: none;
+        padding: 8px;
+        padding-bottom: 9px;
+        border-radius: 0px 15px 15px 0px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 90px;
+        left: 299px;
+    }
+    
+    
+    #caixaPatrimonio {
+        position: absolute;
+        padding: 8px;
+        padding-bottom: 7px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 15px 0px 0px 15px;
+        width: 250px;
+        left: 50px;
+    }
+    
+    #caixaPatrimonio, #botaoentrar2 {
+        margin: 0 5px;
+    }
+
+    /*----------------------------------------------------------------------*/
+
+    .concluido {
+        display: flex;
+        position: absolute;
+        top: 500px;
+        left: 10px;
+        width: 400px;
+    }
+
+    .concluido p{
+        color: black;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    #fotoConfere{
+        width: 95px;
+        height: 95px;
+    }
+
+    /*------------------------------------------------------------*/
+
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+
+                            TELA EM JANELA
+
+-----------------------------------------------------------------------------------------------------------------*/
+
+/* Media Query */
+@media screen and (min-width: 681px) and (max-width: 1000px){
+
+    /* CABEÇALHOS */
+
+    .container{
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0%;
+        position: relative;
+        top: 0%;
+        width: 100%;
+        gap: 1%;
+        height: 12%;
+
+    }
+
+    #titulo{
+        font-family: 'GothamBold';
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin-top: 0;
+        padding-top: 0;
+        flex-grow: 0;
+        font-size: 25px;;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    /*width="270" height="60"*/
+
+    .img{
+        position: absolute;
+        margin-top: 15px;
+        left: -40px;
+        top: 5px;
+        width: 200px;
+        height: 32px;
+    }
+
+    /* -----------------------------------------------------------------*/
+
+    #timer{
+        position: absolute;
+        right: 70px;
+        top: 117px;
+        border: 3px solid rgb(17, 62, 121);
+        border-radius: 0px 15px 15px 0px;
+        border-left: none;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        font-size: 20px;
+        width: 60px;
+        text-align: center;
+    }
+
+    .logout{
+        text-decoration: none;
+        display: flex;
+        top: 117px;
+        position: absolute;
+        right: 162px;
+        background-color: rgb(17, 62, 121);
+        color: #fff;
+        padding: 10px 15px;
+        padding-top:10px;
+        padding-top: 10px;
+        border: 3px solid rgb(17, 62, 121);
+        border-radius: 15px 0px 0px 15px;
+        border-right: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .logout:hover {
+        background-color: rgba(61, 103, 167);
+    }
+
+    /*-----------------------------------------------------------------------------------------*/
+
+    /* INPUTS PARA ENTRADA DE MATRÍCULA OPERADORES, ALUNOS E PATRIMÔNIOS */
+
+    .entrada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .entrada p {
+        font-size: 185%;    
+        position: absolute;
+        top: 300px;
+        margin-bottom: 20px;
+        color: rgb(25, 39, 119);
+        text-align: center;
+    }
+
+    /* Contêiner para alinhar a caixa de texto e o botão */
+    .inputs-container {
+        display: flex;
+        position: absolute;
+        top: 385px;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+    #botaoEntrar {
+        position: absolute;
+        background-color: rgb(17, 62, 121);
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        left: 58.5%;
+    }
+
+    #botaoEntrar:hover {
+        background-color: rgba(61, 103, 167);
+    }
+
+
+    #caixaMatricula {
+        position: absolute;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 20%;
+        right: 41.5%;
+    }
+
+    #caixaMatricula, #botaoEntrar {
+        margin: 0 5px;
+    }
+
+    /* -----------------------------------------------------------------*/
+
+    .patrimonio{
+
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 12%;
+        margin-left: 2.5%;
+
+    }
+
+    .patrimonio p{
+        position: absolute;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: rgb(25, 39, 119);
+        text-align: left;
+        top: 280px;
+        left: 70px;
+
+    }
+
+    .inputs-container2 {
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+        width: 100%;
+    }
+    #botaoEntrar2 {
+        position: absolute;
+        background-color: rgb(17, 62, 121);
+        color: #fff;
+        border: none;
+        padding: 11px 15px;
+        padding-bottom: 10.5px;
+        border-radius: 0px 10px 10px 0px;
+        cursor: pointer;
+        font-size: 16px;
+        left: 368px;
+        top: 372px;
+    }
+
+    #botaoEntrar2:hover {
+        background-color: rgba(61, 103, 167);
+    }
+
+
+    #caixaPatrimonio {
+        position: absolute;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 10px 0px 0px 10px;
+        width: 300px;
+        left: 70px;
+        top: 372px
+    }
+
+    #caixaPatrimonio, #botaoentrar2 {
+        margin: 0 5px;
+    }
+
+    /* -----------------------------------------------------------------*/
+
+    .perfilOperador{
+        display: flex;
+        position: absolute;
+        right: 70px;
+        top: 197px;
+        border: 3px solid rgb(17, 62, 121);
+        border-bottom: 1px solid rgb(17, 62, 121);
+        border-radius: 20px 20px 0px 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 250px;
+        height: 98px;
+        background-color: rgb(225, 225, 225);
+    }
+
+    #identidadeOperador{
+        margin-top: 5%;
+        text-align: left;
+        font-size: 20px;
+        color: rgb(17, 62, 121);
+    }
+
+    #fotoOperador{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 97px;
+        height: 97px;
+        border-radius: 0px 17px 0px 0px;
+        border-left: 1px solid rgb(17, 62, 121);
+        bottom: 0px;
+    }
+
+    .aviso {
+        display: flex;
+        position: absolute;
+        top: 297px;
+        border: 3px solid rgb(17, 62, 121);
+        border-top: 1px solid rgb(17, 62, 121);
+        border-radius: 0px 0px 20px 20px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 250px;
+        height: 100px;
+        right: 70px;
+    }
+
+    .aviso p{
+        display: flex;
+        position: absolute;
+        text-align: left;
+        top: 40px;
+        padding-top: 15px;
+    }
+
+    /* -----------------------------------------------------------------*/
+
+    .perfilAluno{
+        position: absolute;
+        top: 160px;
+        left: 70px;
+    }
+
+    #idaluno{
+        color: rgb(17, 62, 121);
+        font-size: 25px;
+    }
+
+    /* -----------------------------------------------------------------*/
+
+    #erro{
+        position: absolute;
+        bottom: 270px;
+        right: 43%;
+    }
+
+    #erro2{
+        position: absolute;
+        bottom: 210px;
+        right: 45%;
+    }
+
+    #erro3{
+        position: absolute;
+        bottom: 287px;
+        left: 150px;
+    }
+
+    /*----------------------------------------------------------------------*/
+
+    .concluido {
+        display: flex;
+        position: absolute;
+        top: 222px;
+        left: 50px;
+    }
+
+    .concluido p{
+        color: black;
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    #fotoConfere{
+        width: 95px;
+        height: 95px;
+    }
+
+    /*------------------------------------------------------------*/
+
+    table {
+        position: absolute;
+        border-collapse: collapse;
+        width: 90.5%;
+        top: 450px;
+        right: 70px;
+        left: 70px;
+        border: none;
+        margin-bottom: 50px;
+    }
+
+    th, td {
+        border: 2px solid #fff;
+        padding: 5px 2px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fff; /* Cor de fundo para as linhas pares */
+    }
+
+    /* Define a cor para as linhas ímpares */
+    tr:nth-child(odd) {
+        background-color: rgba(61, 103, 167, 0.281); /* Cor de fundo para as linhas ímpares */
+    }
+
+    th {
+        font-size: 20px;
+        background-color: rgb(17, 62, 121);
+        color: #fff;
+    }
+
+    td{
+        font-size: 17;
+        text-align: center;
+    }
+
+
+}
